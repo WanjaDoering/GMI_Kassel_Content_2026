@@ -1,0 +1,553 @@
+# Content-Dreh Kassel · Juni 2026 — Ideen-Übersicht
+
+Mo halber Tag + Di ganzer Tag · Office möglichst leer.
+Tonfall: seriös, freisprechend, keine Schauspielerei.
+
+Cast offen — wer es frei aus dem Kopf sprechen kann, macht es.
+Bei Founder-Themen meist Christoph, bei Sales-Themen meist Max.
+Die Texte unten sind Vorschläge zum freien Sprechen, kein Skript zum Ablesen.
+
+
+====================================================================
+KATEGORIE 1: FOUNDER-AUTHORITY
+====================================================================
+
+--------------------------------------------------------------------
+01. 3 häufige Workflow-Fehler
+--------------------------------------------------------------------
+Setup:     Solo · direkt zur Kamera
+Setting:   Office, ruhige Wand
+Format:    Founder-Take, 60–90 Sek
+
+Vorschlagstext:
+"Mir begegnen im Support immer wieder drei Fehler, die fast jeder
+GMI-Setup macht. Erstens: Postfächer nicht sauber strukturiert.
+Wenn alle Gesellschaften in eine Mailbox laufen, geht der Überblick
+verloren — und Automatisierung ist quasi unmöglich.
+Zweitens: keine Workflow-Tags. Wer ohne Tags arbeitet, sortiert
+Rechnungen jedes Mal manuell — das frisst Zeit, die GMI eigentlich
+sparen soll.
+Drittens: Bankkonten nicht verknüpft. Ohne Abgleich landest du
+wieder im manuellen Modus.
+Drei Fehler, die in zehn Minuten Konfiguration alle weg sind."
+
+
+--------------------------------------------------------------------
+02. Peppol = Mobilfunknetz
+--------------------------------------------------------------------
+Setup:     Solo · am Whiteboard zeichnend
+Setting:   Office vor Whiteboard
+Format:    Whiteboard-Erklärung, 90–120 Sek
+
+Vorschlagstext:
+"Lass mich dir Peppol ganz einfach erklären. Stell dir vor, du
+hast Vodafone. Ich habe Telekom. Wir telefonieren trotzdem
+miteinander, ohne dass wir uns Gedanken machen, wie das Netz
+dahinter funktioniert.
+Genau das ist Peppol — nur für Rechnungen statt für Gespräche.
+Du musst nichts wissen über die Technik, du musst nur an dem
+Netzwerk angeschlossen sein. Dann gehen deine E-Rechnungen
+automatisch an jeden anderen, der ebenfalls am Netz hängt.
+GMI bringt dich aufs Netz. Du nutzt es einfach."
+
+
+--------------------------------------------------------------------
+03. 3 Dinge die du JETZT zur E-Rechnung wissen musst
+--------------------------------------------------------------------
+Setup:     Solo · direkt zur Kamera
+Setting:   Office, ruhige Wand
+Format:    Quick-Tipp, 30–45 Sek
+
+Vorschlagstext:
+"Drei Dinge zur E-Rechnung, die du jetzt wissen solltest.
+Erstens: Die Empfangspflicht für E-Rechnungen gilt schon.
+Wenn du heute eine bekommst, musst du sie verarbeiten können.
+Zweitens: Du brauchst kein eigenes Großprojekt dafür. Ein Tool,
+das das Format versteht, reicht — das macht GMI für dich.
+Drittens: Peppol ist kein Hype, sondern wird Standard. Wer früh
+angebunden ist, hat später keine Umstellungsphase.
+Mehr dazu im nächsten Webinar."
+
+
+--------------------------------------------------------------------
+04. Peppol-Vorteile aus Kundenpraxis
+--------------------------------------------------------------------
+Setup:     Solo · direkt zur Kamera
+Setting:   Office
+Format:    Mini-Erklärung mit Kundenbeispielen, 45–60 Sek
+
+Vorschlagstext:
+"Was bringt Peppol konkret in der Praxis? Drei Punkte, die ich
+von Kunden immer wieder höre.
+Erstens: schnellere Zahlung. Eine E-Rechnung, die über Peppol
+reinkommt, ist innerhalb von Minuten in deinem System — nicht
+erst nach drei Tagen über Mail-Anhang.
+Zweitens: weniger Fehler. Maschinen lesen Maschinen — keine
+Abtipperei, keine Vertipper.
+Drittens: weniger Papier. Ein Kunde von uns hat dieses Jahr
+seinen kompletten Aktenschrank entsorgt. Das ist die echte
+Veränderung."
+
+
+--------------------------------------------------------------------
+05. Warum wir GMI gegründet haben (Origin-Story)
+--------------------------------------------------------------------
+Setup:     Solo · Couch oder am Tisch, locker
+Setting:   Office, casual
+Format:    Persönliches Founder-Statement, 60 Sek
+
+Vorschlagstext:
+"Was uns damals genervt hat, war ganz konkret das hier:
+Wir haben in einer anderen Firma gearbeitet, und am Monatsende
+hat unser Buchhalter immer mit dem gleichen Satz vor uns
+gestanden — 'Wo sind die Belege?'
+Niemand wusste es. Jeder hatte irgendwo welche, aber niemand
+hatte alles.
+Wir haben dann angefangen, ein Tool zu bauen, das genau dieses
+Problem löst: Belege automatisch einsammeln, egal woher sie
+kommen. Das war die erste Version von GMI.
+Heute machen wir deutlich mehr als nur Belege sammeln — aber
+der Ursprung war wirklich nur dieser eine nervige Satz am
+Monatsende."
+
+
+--------------------------------------------------------------------
+06. Was wir bei GMI NICHT versprechen
+--------------------------------------------------------------------
+Setup:     Solo · direkt zur Kamera
+Setting:   Office, casual
+Format:    Anti-Hype-Statement, 45 Sek
+
+Vorschlagstext:
+"Was wir nicht versprechen.
+Wir versprechen nicht, dass GMI deine Buchhaltung komplett
+ersetzt — das ist nach wie vor Aufgabe deines Steuerberaters
+oder deines Buchhaltungsteams.
+Wir versprechen nicht, dass jede Rechnung zu 100 Prozent
+automatisch richtig erkannt wird — da gibt es Sonderfälle,
+die brauchen ein menschliches Auge.
+Was wir versprechen ist: 95 Prozent deiner Routine-Belege
+laufen automatisch durch. Und die 5 Prozent, die nicht — die
+siehst du sofort, und kannst sie in Sekunden korrigieren.
+Das ist ehrlich, und das hält."
+
+
+--------------------------------------------------------------------
+07. GMI-Glossar (Serie · 10 Folgen aus einem Dreh)
+--------------------------------------------------------------------
+Setup:     Solo · gleicher Hintergrund pro Folge
+Setting:   Office, einheitliche Wand
+Format:    1 Fachbegriff pro Folge, je 30 Sek
+
+Pro Folge der gleiche Aufbau: Begriff → 1 Satz Definition →
+1 Satz warum es wichtig ist → 1 Satz wie GMI damit umgeht.
+
+
+--- Folge 07a: SKONTO ---
+"Skonto ist im Grunde ein Mengenrabatt für schnelles Bezahlen.
+Wenn du innerhalb von 14 Tagen zahlst statt 30, geben dir viele
+Lieferanten zwei oder drei Prozent Rabatt. Klingt wenig — aber
+bei einem Mittelständler mit ein paar Hunderttausend Euro
+Wareneinkauf im Jahr reden wir von einer fünfstelligen Summe,
+die du verlierst, wenn du das nicht systematisch nutzt.
+Genau das macht GMI für dich automatisch."
+
+
+--- Folge 07b: OPOS ---
+"OPOS heißt 'Offene Posten'. Damit ist gemeint: alle Rechnungen,
+die du noch nicht bezahlt hast — und alle, die deine Kunden noch
+nicht bezahlt haben.
+Eine saubere OPOS-Liste ist das wichtigste Werkzeug der
+Buchhaltung. Wer keine hat, hat keine Übersicht über sein Geld."
+
+
+--- Folge 07c: OCR ---
+"OCR steht für 'Optical Character Recognition' — also
+Texterkennung in Bildern.
+Wenn du eine Papier-Rechnung mit der Kamera scannst, ist OCR
+der Schritt, der das Bild in lesbaren Text verwandelt. Bei GMI
+passiert das automatisch — du musst nichts eintippen."
+
+
+--- Folge 07d: GoBD ---
+"GoBD sind die Regeln, an die du dich in Deutschland halten
+musst, wenn du Belege digital speicherst.
+Lesbar, unveränderbar, jederzeit auffindbar, zehn Jahre lang.
+GMI ist GoBD-konform — das heißt, alles was bei uns gespeichert
+wird, hält einer Betriebsprüfung stand."
+
+
+--- Folge 07e: ZUGFeRD ---
+"ZUGFeRD ist ein E-Rechnungs-Format. Eine ZUGFeRD-Rechnung ist
+gleichzeitig ein PDF und enthält eingebettete Daten, die ein
+Computer lesen kann.
+Mensch und Maschine sehen die gleiche Rechnung — das ist der
+ganze Trick."
+
+
+--- Folge 07f: PEPPOL ---
+"Peppol ist das Netzwerk, über das E-Rechnungen verschickt
+werden. Stell dir's vor wie ein Mobilfunknetz — nur eben für
+Rechnungen statt für Anrufe. Du musst da nur angeschlossen sein,
+dann kommen deine Rechnungen automatisch an."
+
+
+--- Folge 07g: X-RECHNUNG ---
+"X-Rechnung ist das offizielle E-Rechnungsformat der deutschen
+Verwaltung. Wenn du dem Staat eine Rechnung stellst, muss sie
+in X-Rechnung-Format sein. Reine XML-Daten — kein PDF mehr.
+Das ist Pflicht."
+
+
+--- Folge 07h: BELEGERKENNUNG ---
+"Belegerkennung ist der Prozess, bei dem aus einem Foto oder
+einem PDF die wichtigen Daten ausgelesen werden:
+Rechnungsnummer, Datum, Betrag, IBAN.
+Bei GMI passiert das automatisch, und zwar in der Sekunde, in
+der die Rechnung reinkommt."
+
+
+--- Folge 07i: KREDITKARTEN-RECONCILIATION ---
+"Kreditkarten-Reconciliation heißt: du gleichst die Abrechnung
+deiner Firmen-Kreditkarte mit den dazugehörigen Belegen ab.
+Klingt langweilig, ist aber für viele Buchhaltungen der größte
+Stress des Monats. GMI macht das automatisch — Beleg zu
+Transaktion, fertig."
+
+
+--- Folge 07j: WORKFLOW-TAG ---
+"Workflow-Tags sind kleine Markierungen, die du auf Belege
+setzen kannst, damit sie automatisch durch den richtigen
+Freigabeprozess laufen.
+Beispiel: alle Tank-Belege landen direkt bei der Person, die
+dafür verantwortlich ist — ohne dass du jedes Mal selbst
+sortieren musst."
+
+
+--------------------------------------------------------------------
+08. Mein Lieblings-Feature (offen + ehrlich)
+--------------------------------------------------------------------
+Setup:     Solo · locker auf Couch oder am Tisch
+Setting:   Office, casual
+Format:    Persönliches Founder-Statement, 30 Sek
+
+Vorschlagstext:
+"Mein absolutes Lieblings-Feature in GMI ist tatsächlich das
+Workflow-Tag-System. Klingt unspektakulär — aber das ist das
+Feature, das aus 'wir sammeln deine Belege' den Schritt zu
+'wir organisieren deine Buchhaltung' macht.
+Du legst einmal fest: Tank-Belege gehen an Person A,
+Software-Rechnungen über 1.000 Euro brauchen Freigabe von
+Person B — und dann läuft alles automatisch.
+Das ist für mich der Punkt, wo GMI von einem Tool zu einer
+richtigen Infrastruktur wird."
+
+
+====================================================================
+KATEGORIE 2: SALES-FRONTLINE
+====================================================================
+
+--------------------------------------------------------------------
+09. "500 statt 50 Belege" — Wachstumsstory
+--------------------------------------------------------------------
+Setup:     Solo · entspannt sitzend
+Setting:   Office-Couch oder großer Tisch · Kaffee in der Hand
+Format:    Casual Sales-Anekdote, 45 Sek
+
+Vorschlagstext:
+"Letzte Woche hatte ich ein Gespräch mit einem Kunden — eine
+relativ junge Firma, die ist im letzten halben Jahr von 50
+Belegen pro Monat auf 500 hochgegangen. Wahnsinniges Wachstum.
+Aber: ihre Buchhaltung war von einem Tag auf den anderen am
+Ende. Eine Person, die das vorher locker geschafft hat, kam
+plötzlich nicht mehr nach.
+Wir haben dann GMI eingebaut, in der ersten Woche war
+eingerichtet was wir brauchten, in der zweiten Woche lief die
+Buchhaltung wieder.
+Heute sind sie bei 800 Belegen — und es ist immer noch die
+gleiche Person, die das macht."
+
+
+--------------------------------------------------------------------
+10. Skonti-Verlust-Story
+--------------------------------------------------------------------
+Setup:     Solo · sitzend
+Setting:   Couch oder am großen Tisch
+Format:    Sales-Anekdote mit Empörung, 45 Sek
+
+Vorschlagstext:
+"Wisst ihr was mich wirklich nervt? Wenn ich mit Kunden rede,
+und die mir erzählen, dass sie monatlich vierstellige Beträge
+an Skonti verlieren. Und das nicht, weil sie kein Geld haben —
+sondern weil sie keine Struktur haben.
+Die Rechnung liegt da, der Skonto-Zeitraum läuft ab, niemand
+merkt's, das Geld ist weg.
+Allein der Skonti-Hebel zahlt bei vielen Kunden die GMI-Kosten
+mehrfach zurück. Aber das musst du erstmal sehen — und genau
+das macht GMI sichtbar."
+
+
+--------------------------------------------------------------------
+11. 3 Sätze die mir Kunden immer wieder sagen
+--------------------------------------------------------------------
+Setup:     Solo · locker
+Setting:   Couch oder Tisch
+Format:    Sales-Frontline-Beobachtung, 60 Sek
+
+Vorschlagstext:
+"Drei Sätze, die ich in Kundengesprächen wirklich jede Woche
+höre.
+
+Erster Satz: 'Wir wollten das schon längst angehen, sind aber
+nie dazu gekommen.' Antwort: genau dafür ist ein Einrichtungs-
+Workshop da — vier Stunden, danach läuft's.
+
+Zweiter Satz: 'Wir machen das im Excel, das reicht uns.'
+Antwort: 'Reicht' ist das gefährlichste Wort. Wenn du wachsen
+willst, ist Excel die erste Bremse.
+
+Dritter Satz: 'Unser Steuerberater hat doch sein eigenes Tool.'
+Antwort: Genau deshalb gibt's GMI — wir füttern das Tool deines
+Steuerberaters, statt es zu ersetzen."
+
+
+--------------------------------------------------------------------
+12. Eine Kunden-Mail von dieser Woche
+--------------------------------------------------------------------
+Setup:     Solo · Laptop oder Phone in der Hand
+Setting:   Office am Schreibtisch oder Couch
+Format:    Anonymisiert vorlesen + einordnen, 45 Sek
+
+Vorschlagstext:
+"Ich habe diese Woche eine Mail bekommen — anonymisiert
+natürlich, aber der Inhalt war fast wortwörtlich:
+'Hallo Max, wir hatten gerade unsere Quartalsbesprechung, und
+unsere Buchhalterin hat angekündigt zu kündigen — sie schafft
+das Volumen nicht mehr. Wir suchen eine Lösung, die ihr Arbeit
+abnimmt.'
+
+Genau das ist der Punkt, an dem viele Firmen erst kommen —
+wenn jemand kündigt. Und genau das ist der Moment, wo GMI das
+größte Argument hat: nicht weil wir die Buchhalterin ersetzen,
+sondern weil wir ihr das nervige Routine-Volumen abnehmen,
+damit sie sich auf das konzentrieren kann, wofür sie eigentlich
+da ist."
+
+
+--------------------------------------------------------------------
+13. Was war diese Woche überraschend?
+--------------------------------------------------------------------
+Setup:     Solo · Stehgreif-Take
+Setting:   Office, jedes Setting OK
+Format:    Wöchentlich wiederholbar, 30 Sek
+
+Vorschlagstext (Beispiel-Take):
+"Was mich diese Woche überrascht hat: Wir hatten drei Anfragen
+von Kunden, die das gleiche Problem hatten — Belege aus dem
+Ausland werden anders behandelt, je nachdem ob sie in der EU
+oder außerhalb sind.
+Drei Anfragen in einer Woche zum gleichen Detail — das heißt:
+das ist ein Thema, das viele beschäftigt. Wir schauen jetzt, ob
+wir das ins Onboarding aufnehmen können."
+
+
+====================================================================
+KATEGORIE 3: PRODUCT-IN-USE
+====================================================================
+
+--------------------------------------------------------------------
+14. Mobile App in 3 Sekunden
+--------------------------------------------------------------------
+Setup:     Hands-only
+Setting:   Tischfläche mit Tageslicht oder Softbox
+Format:    Top-Down-Shot, loopbar, 5 Sek
+
+Kein gesprochener Text. Rein visuell mit Sound-Design:
+Hand legt Beleg ab → andere Hand zückt Phone → Scan-Move →
+"Hochgeladen ✓" mit kleinem Sound.
+
+
+--------------------------------------------------------------------
+15. Beleg-Scan-Race "Alt vs. GMI"
+--------------------------------------------------------------------
+Setup:     Duo · zwei Schreibtische nebeneinander
+Setting:   Office
+Format:    Stoppuhr-Wettkampf, 30 Sek
+
+Vorschlagstext / Ablauf:
+Off-Stimme: "Wir machen ein kleines Race. Drei... zwei...
+eins... Los!"
+
+[Stoppuhr läuft sichtbar.]
+
+Person A: Beleg fotografieren mit normaler Kamera-App, in Mail
+einfügen, Empfänger eintippen, Betreff schreiben, abschicken.
+
+Person B: GMI-App öffnen, Beleg scannen, fertig.
+
+Person B nach 4 Sekunden: "Fertig."
+Person A nach 30 Sekunden, kämpft noch mit Login:
+"Moment, moment..."
+
+Echtes Lachen.
+
+Person B: "Das war Beleg Nummer eins. Wir haben in dem Tempo
+50 hier liegen. Viel Spaß."
+
+
+--------------------------------------------------------------------
+16. Desktop App Live Walk-through
+--------------------------------------------------------------------
+Setup:     Solo · am echten Laptop
+Setting:   eigener Schreibtisch
+Format:    Live-Walk-through, 90 Sek
+
+Vorschlagstext:
+"Was unsere Desktop App anders macht als die Web-Version.
+
+Erstens — die App läuft lokal auf deinem Rechner. Das bedeutet:
+keine Browser-Hänger, keine Tabs die zumachen, kein gesicherter-
+Modus-Quatsch.
+
+Zweitens — die Portalverbindungen sind deutlich stabiler. In der
+Web-Version musst du manchmal Lieferanten-Portale neu verbinden,
+in der Desktop-App passiert das praktisch nicht mehr.
+
+Drittens — du entscheidest selbst, ob deine Passwörter bei uns
+gespeichert werden oder bei dir. Das ist Datenschutz-mäßig der
+größte Unterschied.
+
+[klickt durch die Oberfläche]
+
+Hier siehst du die Übersicht — sieht aus wie immer, läuft aber
+lokal. Drei Minuten Installation, dann läuft's."
+
+
+====================================================================
+KATEGORIE 4: LIFESTYLE / LOCKERE BEOBACHTUNGEN
+====================================================================
+
+--------------------------------------------------------------------
+17. Lass dir den Geschäftsessens-Spaß nicht verderben
+--------------------------------------------------------------------
+Setup:     Solo · entspannt, gegen Ende Beleg in der Hand
+Setting:   Restaurant- oder Café-Setting (leer) oder
+           Office-Catering-Ecke
+Format:    Locker-seriöse Lifestyle-Vignette, 30 Sek
+
+Vorschlagstext:
+"Lass dir den Spaß am Geschäftsessen nicht verderben — auch
+wenn der Abend länger geht. Der Beleg ist in fünf Sekunden
+gescannt.
+
+[Scan-Move beiläufig — kein Inszenieren]
+
+Genieß den Abend."
+
+
+--------------------------------------------------------------------
+18. Walk-&-Talk durchs Office (Themen-Reihe)
+--------------------------------------------------------------------
+Setup:     Solo · laufend
+Setting:   Office-Flur oder Großraum
+Format:    Walking-Talking, 45–60 Sek pro Take
+
+Vier Themen-Optionen — jeweils einzeln zu drehen.
+
+
+--- 18a: Warum die Desktop App jetzt kam ---
+"Warum wir die Desktop-App jetzt rausgebracht haben — eine
+kurze Erklärung. Wir haben in den letzten zwei Jahren zwei
+Beobachtungen gemacht.
+Erstens, immer mehr Kunden arbeiten von verschiedenen Geräten
+aus — und der Browser ist da nicht immer die beste Lösung.
+Zweitens — gerade größere Kunden wollen entscheiden können, wo
+ihre Passwörter liegen.
+Beides geht mit einer Desktop-App besser. Deshalb haben wir das
+jetzt gebaut. Verfügbar für Mac und Windows."
+
+
+--- 18b: Wie ein Tag bei GMI aussieht ---
+"Wie ein typischer Tag bei uns aussieht — morgens kurzes Stand-up
+im Team, jeder sagt was er heute macht. Danach läuft Slack
+durchgehend mit Kundenanfragen — manchmal lustig, manchmal
+anspruchsvoll. Nachmittags meistens Produktarbeit oder Demos.
+Was uns auszeichnet: keine Hierarchie-Spielchen. Wenn jemand
+eine Frage hat, ruft er sie laut in den Raum — und kriegt eine
+Antwort. Das ist im B2B-Software-Markt nicht selbstverständlich."
+
+
+--- 18c: Was uns bei E-Rechnung gerade beschäftigt ---
+"Was uns bei E-Rechnung gerade beschäftigt — und das ist
+tatsächlich kein Marketing-Talk: wir merken, dass viele unserer
+Kunden noch nicht angefangen haben, sich vorzubereiten.
+Die Pflicht ist da, aber das Bewusstsein ist noch lückenhaft.
+Deshalb investieren wir gerade viel in Aufklärung — wie diese
+Videos, ein paar Webinare, ehrliche Erklärungen.
+Das ist kein Produkt-Push, das ist eher ein 'wir sehen das
+Problem zuerst und wollen euch nicht im Regen stehen lassen'."
+
+
+--- 18d: Was wir als nächstes bauen ---
+"Worauf wir uns gerade konzentrieren — drei Sachen.
+Erstens, noch tieferes Tooling für mehrere Gesellschaften. Wir
+sehen, dass Kunden mit fünf, zehn, manchmal zwanzig GmbHs die
+meisten Schmerzpunkte haben.
+Zweitens, Peppol-Anbindung weiter ausbauen.
+Und drittens, KI-gestützte Anomalie-Erkennung — wenn eine
+Rechnung verdächtig aussieht, soll GMI das sehen, nicht erst der
+Buchhalter.
+Das ist der Pfad für die nächsten zwölf Monate."
+
+
+====================================================================
+KATEGORIE 5: OFFICE-VIBE (läuft nebenher)
+====================================================================
+
+--------------------------------------------------------------------
+19. Office-Fotos zwischendurch
+--------------------------------------------------------------------
+Setup:     BTS · zwischen den geplanten Takes
+Setting:   ganzes Office (Küche, Schreibtische, Meeting-Raum,
+           Pause, Fenster-Licht)
+Format:    Foto-Stock-Material, kein gesprochener Text
+
+Was sammeln:
+- Hände an Tastatur
+- Kaffee
+- Slack-Notification auf Bildschirm
+- zwei Leute am Whiteboard
+- Lachen im Meeting
+- Sonne durchs Fenster
+- Pflanzen
+- GMI-Logo-Detail
+- Sneaker unter dem Tisch
+- Pause auf der Couch
+
+Verwendung später:
+- Social-Posts (Hintergrund-Material)
+- Blog-Header
+- Webinar-Folien
+- About-Page der Website
+
+
+====================================================================
+ANMERKUNGEN
+====================================================================
+
+- Alle Texte sind Vorschläge zum freien Sprechen, kein Skript zum
+  Ablesen. Drei Stichworte vorher anschauen, dann selbst formulieren.
+
+- Die Glossar-Serie (07) und die "Was war überraschend?"-Reihe (13)
+  sind als wiederkehrende Formate gedacht — aus einem Dreh entstehen
+  mehrere Wochen Content.
+
+- Cast-Zuordnung ist noch nicht festgelegt. Vorschlag:
+  · Founder-Authority (01–08): meist Christoph
+  · Sales-Frontline (09–13): meist Max
+  · Product-in-Use (14–16): wer Lust hat
+  · Lifestyle / Walk-&-Talk (17–18): offen
+  · Office-Vibe (19): läuft den ganzen Tag mit
+
+- Office-Fotos (19) bitte über den ganzen Dreh-Tag verteilen —
+  in den Pausen zwischen den Takes "nebenher" sammeln.

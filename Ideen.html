@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content-Dreh Kassel · Juni 2026 — Ideen v2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+:root {
+  --cyan: #44a4dc;
+  --cyan-dark: #2d8ec5;
+  --cyan-bg: #e8f4fb;
+  --text: #161616;
+  --muted: #6c6c6c;
+  --bg: #f7f7f8;
+  --card: #ffffff;
+  --border: #e6e6e9;
+  --green: #2dba6a;
+  --green-bg: rgba(45, 186, 106, 0.12);
+  --green-text: #1e8c4f;
+  --yellow: #f5b942;
+  --yellow-bg: rgba(245, 185, 66, 0.15);
+  --yellow-text: #92681a;
+  --rose: #d49bbf;
+  --rose-bg: rgba(212, 155, 191, 0.18);
+  --rose-text: #8c4475;
+}
+html, body { margin: 0; padding: 0; font-family: 'Rubik', sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; }
+
+header { background: linear-gradient(135deg, #0f0f0f 0%, #2a2a2a 100%); color: white; padding: 56px 32px 40px; }
+header .wrap { max-width: 1400px; margin: 0 auto; }
+header h1 { margin: 0 0 8px; font-weight: 800; font-size: 36px; letter-spacing: -0.5px; }
+header .subtitle { color: #b3b3b3; font-size: 15px; font-weight: 400; max-width: 720px; }
+header .stats { margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap; }
+header .stats .stat { background: rgba(255,255,255,0.06); padding: 14px 20px; border-radius: 12px; min-width: 110px; border: 1px solid rgba(255,255,255,0.08); }
+header .stats .stat strong { color: var(--cyan); font-weight: 800; font-size: 24px; display: block; line-height: 1.1; }
+header .stats .stat span { color: #aaa; font-size: 12px; }
+
+.philosophy { background: var(--cyan-bg); padding: 32px; border-bottom: 1px solid var(--border); }
+.philosophy .wrap { max-width: 1400px; margin: 0 auto; }
+.philosophy h2 { margin: 0 0 14px; color: var(--cyan-dark); font-weight: 700; font-size: 18px; }
+.philosophy .lead { margin: 0 0 16px; color: var(--text); font-size: 15px; max-width: 800px; }
+.philosophy .principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; max-width: 1100px; }
+.philosophy .principle { background: white; padding: 14px 16px; border-radius: 10px; font-size: 13px; }
+.philosophy .principle strong { display: block; color: var(--cyan-dark); font-weight: 700; margin-bottom: 4px; }
+
+.filters { background: var(--card); padding: 18px 32px; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+.filters .wrap { max-width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+.filter-group { display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.filter-group > .label { font-weight: 600; font-size: 12px; color: var(--muted); margin-right: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+.filter-group button { background: var(--bg); border: 1px solid var(--border); padding: 6px 12px; border-radius: 999px; font-family: inherit; font-size: 13px; color: var(--text); cursor: pointer; transition: all 0.15s; }
+.filter-group button:hover { background: var(--cyan-bg); border-color: var(--cyan); }
+.filter-group button.active { background: var(--cyan); color: white; border-color: var(--cyan); font-weight: 500; }
+.filter-reset { background: transparent; border: none; color: var(--cyan-dark); text-decoration: underline; cursor: pointer; font-size: 13px; font-family: inherit; padding: 6px 8px; }
+
+main { padding: 40px 32px 80px; max-width: 1400px; margin: 0 auto; }
+.category { margin-bottom: 56px; }
+.category-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 22px; padding-bottom: 14px; border-bottom: 2px solid var(--border); }
+.category-head h2 { font-weight: 700; font-size: 24px; margin: 0; }
+.category-head .count { background: var(--bg); padding: 4px 12px; border-radius: 999px; font-size: 12px; color: var(--muted); border: 1px solid var(--border); }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 20px; }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 22px; transition: all 0.2s; position: relative; }
+.card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.07); border-color: var(--cyan); }
+.card.fav { border-color: var(--cyan); box-shadow: 0 0 0 2px rgba(68,164,220,0.2); }
+.card.fav::before { content: '⭐'; position: absolute; top: 14px; right: 14px; font-size: 18px; }
+.card-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; padding-right: 28px; }
+.card-num { font-weight: 800; color: var(--cyan); font-size: 12px; letter-spacing: 1.5px; }
+.card-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.badge { font-size: 10px; padding: 3px 9px; border-radius: 999px; font-weight: 600; background: var(--bg); color: var(--muted); border: 1px solid var(--border); text-transform: uppercase; letter-spacing: 0.5px; }
+.badge.green { background: var(--green-bg); color: var(--green-text); border-color: rgba(45, 186, 106, 0.3); }
+.badge.yellow { background: var(--yellow-bg); color: var(--yellow-text); border-color: rgba(245, 185, 66, 0.3); }
+.badge.cyan { background: var(--cyan-bg); color: var(--cyan-dark); border-color: var(--cyan); }
+.badge.rose { background: var(--rose-bg); color: var(--rose-text); border-color: rgba(212, 155, 191, 0.45); }
+
+.card h3 { font-weight: 700; font-size: 19px; margin: 0 0 4px; line-height: 1.25; }
+.card .card-sub { color: var(--muted); font-size: 13px; margin: 0 0 14px; font-style: italic; }
+
+.card .meta { display: grid; gap: 4px; font-size: 13px; margin-bottom: 14px; padding: 12px 14px; background: var(--bg); border-radius: 8px; }
+.card .meta div { display: flex; }
+.card .meta strong { color: var(--text); display: inline-block; min-width: 90px; font-weight: 600; flex-shrink: 0; }
+.card .meta .meta-val { color: var(--muted); }
+
+.card .block { margin-bottom: 12px; }
+.card .block:last-child { margin-bottom: 0; }
+.card .block-label { font-size: 10px; font-weight: 700; color: var(--cyan-dark); text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 4px; }
+.card .block p { margin: 0; font-size: 14px; line-height: 1.55; }
+.card .block.quote p { color: var(--text); border-left: 3px solid var(--cyan); padding-left: 12px; font-style: italic; }
+.card .block.highlight { background: var(--cyan-bg); padding: 12px 14px; border-radius: 8px; border-left: 3px solid var(--cyan); }
+.card .block.highlight .block-label { color: var(--cyan-dark); }
+
+footer { text-align: center; padding: 32px; color: var(--muted); font-size: 13px; line-height: 1.7; background: var(--card); border-top: 1px solid var(--border); }
+footer kbd { background: var(--bg); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border); font-family: monospace; font-size: 11px; }
+
+@media print {
+  .filters { position: static; box-shadow: none; }
+  .filters button, .filter-reset { display: none; }
+  .card { break-inside: avoid; box-shadow: none !important; transform: none !important; page-break-inside: avoid; }
+  header { background: white !important; color: black !important; -webkit-print-color-adjust: exact; }
+  header h1, header .subtitle, header .stats span { color: black !important; }
+  .card:hover { transform: none !important; box-shadow: none !important; }
+}
+
+@media (max-width: 640px) {
+  header { padding: 32px 20px 24px; }
+  header h1 { font-size: 26px; }
+  main { padding: 24px 16px 60px; }
+  .filters { padding: 14px 16px; }
+  .grid { grid-template-columns: 1fr; }
+  .category-head h2 { font-size: 20px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Content-Dreh Kassel · Juni 2026 <span style="color:#666; font-weight:400; font-size:18px; margin-left:8px;">v3</span></h1>
+    <div class="subtitle">Mo halber Tag · Di ganzer Tag · Office möglichst leer · Cast offen (wer's frei sprechen kann) · Tonfall: <strong style="color:white;">seriös, freisprechend, keine Schauspielerei</strong></div>
+    <div class="stats">
+      <div class="stat"><strong>29</strong><span>Ideen total</span></div>
+      <div class="stat"><strong>13</strong><span>Solo / freisprechend</span></div>
+      <div class="stat"><strong>10</strong><span>NEU: AI-Intros &amp; Transitions</span></div>
+      <div class="stat"><strong>6</strong><span>Duo · Hands · BTS</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="philosophy">
+  <div class="wrap">
+    <h2>🎯 Auswahl-Prinzip (Iteration 2)</h2>
+    <p class="lead">Sketches und Comedy-Hooks raus. Drin bleibt was <strong>jemand frei aus dem Kopf sprechen kann</strong> — ohne dass es nach Schauspielerei oder Skript klingt. Seriös, knapp, mit echter Praxis-Erfahrung. Kurze Statements > lange Szenen.</p>
+    <div class="principles">
+      <div class="principle"><strong>Frei sprechen statt skripten</strong>3-Wort-Stichworte vorher, dann selbst formulieren. Kein abgelesener Text.</div>
+      <div class="principle"><strong>Echte Praxis-Beobachtung</strong>Christoph spricht als Founder, Max aus Sales-Frontline. Keine fiktiven Rollen.</div>
+      <div class="principle"><strong>Seriöser Tonfall</strong>Kein „Wusstest du, dass …?" Stattdessen: nüchtern, ehrlich, mit Standpunkt.</div>
+      <div class="principle"><strong>Format-Reihen</strong>Mehrere Folgen aus einem Dreh — Founder-Take, Sales-Beobachtung, Glossar. Skaliert über Wochen.</div>
+      <div class="principle"><strong>Echte Hände / echte App</strong>Bei Demos: Tageslicht, echtes Phone, kein Mockup. Trust-Faktor.</div>
+      <div class="principle"><strong>Office-Vibe nebenher</strong>BTS-Fotos und Vibe-Aufnahmen laufen mit — Stock-Material für Wochen.</div>
+    </div>
+  </div>
+</section>
+
+<div class="filters">
+  <div class="wrap">
+    <div class="filter-group">
+      <span class="label">Setup</span>
+      <button data-type="setup" data-val="solo">Solo</button>
+      <button data-type="setup" data-val="duo">Duo</button>
+      <button data-type="setup" data-val="hands">Hands-only</button>
+      <button data-type="setup" data-val="bts">BTS / Fotos</button>
+      <button data-type="setup" data-val="edit">Edit / Postprod</button>
+    </div>
+    <div class="filter-group">
+      <span class="label">Setting</span>
+      <button data-type="loc" data-val="office-talk">Office Talking-Head</button>
+      <button data-type="loc" data-val="office-couch">Couch / Tisch</button>
+      <button data-type="loc" data-val="office-walk">Office Walk</button>
+      <button data-type="loc" data-val="whiteboard">Whiteboard</button>
+      <button data-type="loc" data-val="restaurant">Restaurant / Lifestyle</button>
+      <button data-type="loc" data-val="topdown">Tisch Top-Down</button>
+    </div>
+    <div class="filter-group">
+      <span class="label">Topic</span>
+      <button data-type="topic" data-val="mobile">Mobile App</button>
+      <button data-type="topic" data-val="desktop">Desktop App</button>
+      <button data-type="topic" data-val="peppol">Peppol / E-Rechnung</button>
+      <button data-type="topic" data-val="story">Sales-Story</button>
+      <button data-type="topic" data-val="founder">Founder-Take</button>
+      <button data-type="topic" data-val="glossar">Glossar</button>
+      <button data-type="topic" data-val="lifestyle">Lifestyle</button>
+      <button data-type="topic" data-val="intro">AI-Intro</button>
+      <button data-type="topic" data-val="transition">Transition</button>
+      <button data-type="topic" data-val="algorithm">Algorithmus</button>
+    </div>
+    <div class="filter-group">
+      <span class="label">Tag</span>
+      <button data-type="day" data-val="mo">Mo</button>
+      <button data-type="day" data-val="di">Di</button>
+    </div>
+    <button class="filter-reset" onclick="resetFilters()">Reset</button>
+  </div>
+</div>
+
+<main>
+
+<section class="category">
+  <div class="category-head"><h2>🎓 Founder-Authority</h2><span class="count">8 Ideen · seriös, frei aus Erfahrung gesprochen</span></div>
+  <div class="grid">
+
+    <article class="card" data-setup="solo" data-loc="office-talk" data-topic="founder" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">01</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge">~25 min</span></div>
+      </div>
+      <h3>3 häufige Workflow-Fehler</h3>
+      <p class="card-sub">Founder-Take · 60–90 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · direkt zur Kamera</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Office, ruhige Wand</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ · DSLR oder iPhone · gutes Mikro</span></div>
+      </div>
+      <div class="block"><div class="block-label">Stichworte zum freien Sprechen</div><p>3 Fehler aus Support-Tickets. Pro Fehler: 1 Beispiel + 1 Satz wie's besser geht.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Trust kommt aus „ich seh das jeden Tag" — nicht aus Skript.</p></div>
+    </article>
+
+    <article class="card" data-setup="solo" data-loc="whiteboard" data-topic="peppol" data-day="mo">
+      <div class="card-head">
+        <span class="card-num">02</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge">~40 min</span></div>
+      </div>
+      <h3>Peppol = Mobilfunknetz</h3>
+      <p class="card-sub">Whiteboard-Erklärung · 90–120 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · am Whiteboard zeichnend</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Office vor Whiteboard</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ · DSLR · Marker · Whiteboard</span></div>
+      </div>
+      <div class="block"><div class="block-label">Stichworte</div><p>Vodafone–Telekom-Analogie. 2 Sender, dazwischen das Netz. Übertrag auf Rechnungs-Versand.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Live-Marker am Board + spontane Analogie = das authentischste Erklärformat überhaupt.</p></div>
+    </article>
+
+    <article class="card" data-setup="solo" data-loc="office-talk" data-topic="peppol" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">03</span>
+        <div class="card-badges"><span class="badge yellow">🟡 Real stark</span><span class="badge">~20 min</span></div>
+      </div>
+      <h3>3 Dinge die du JETZT zur E-Rechnung wissen musst</h3>
+      <p class="card-sub">Knapp · nüchtern · 30–45 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · direkt zur Kamera</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Office, ruhige Wand</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ · DSLR · gutes Mikro</span></div>
+      </div>
+      <div class="block"><div class="block-label">Stichworte</div><p>Pflicht-Datum · was muss vorbereitet sein · was es eigentlich nicht mehr braucht.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Sachlicher Tonfall = Trust. Kein Marketing-Bla, sondern Pflicht-Info.</p></div>
+    </article>
+
+    <article class="card" data-setup="solo" data-loc="office-talk" data-topic="peppol" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">04</span>
+        <div class="card-badges"><span class="badge yellow">🟡 Real stark</span><span class="badge">~20 min</span></div>
+      </div>
+      <h3>Peppol-Vorteile aus Kundenpraxis</h3>
+      <p class="card-sub">3 konkrete Beispiele · 45–60 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · direkt zur Kamera</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Office</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ · DSLR · Mikro</span></div>
+      </div>
+      <div class="block"><div class="block-label">Stichworte</div><p>Schnellere Zahlung · weniger Fehler · weniger Papier — je 1 echtes Kundenbeispiel.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Anekdote braucht Stimme. „Ein Kunde …" trägt nur, wenn echt formuliert.</p></div>
+    </article>
+
+    <article class="card" data-setup="solo" data-loc="office-couch" data-topic="founder" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">05</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge cyan">NEU</span><span class="badge">~25 min</span></div>
+      </div>
+      <h3>Warum wir GMI gegründet haben</h3>
+      <p class="card-sub">Origin-Story · 60 Sek · Founder-Statement</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · Couch oder am Tisch, locker</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Office, casual</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ · DSLR · Mikro · ggf. Beleuchtung</span></div>
+      </div>
+      <div class="block"><div class="block-label">Stichworte zum freien Sprechen</div><p>Welches Problem hat dich damals genervt. Was war der Auslöser. Was war die erste Version.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Founder-Story ist die ehrlichste Form von Marketing. AI kann nicht persönliche Geschichte.</p></div>
+    </article>
+
+    <article class="card" data-setup="solo" data-loc="office-couch" data-topic="founder" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">06</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge cyan">NEU</span><span class="badge">~20 min</span></div>
+      </div>
+      <h3>Was wir bei GMI NICHT versprechen</h3>
+      <p class="card-sub">Anti-Hype · ehrliche Abgrenzung · 45 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · direkt zur Kamera</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Office, casual</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ · DSLR · Mikro</span></div>
+      </div>
+      <div class="block"><div class="block-label">Stichworte</div><p>„Wir versprechen nicht X, Y, Z — was wir wirklich können ist …" Bewusste Untertreibung als Vertrauenshebel.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Anti-Marketing-Statement wirkt erfrischend nüchtern. Sticht aus der „Wir-lösen-alles"-Soße raus.</p></div>
+    </article>
+
+    <article class="card" data-setup="solo" data-loc="office-talk" data-topic="glossar" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">07</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge cyan">NEU · SERIE</span><span class="badge">~45 min für 6 Folgen</span></div>
+      </div>
+      <h3>GMI-Glossar: 1 Begriff in 30 Sek</h3>
+      <p class="card-sub">Serie · 6–10 Folgen aus einem Dreh</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · gleicher Hintergrund pro Folge</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Office, einheitliche Wand</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ · DSLR · gutes Mikro</span></div>
+      </div>
+      <div class="block"><div class="block-label">Begriffe-Liste (Vorschlag)</div><p>Skonto · OPOS · OCR · GoBD · ZUGFeRD · Peppol · X-Rechnung · Belegerkennung · Kreditkarten-Reconciliation · Workflow-Tag</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Wissens-Snippets von einem Founder = Authority. Pro Folge 30 Sek = wöchentliches Posting für Monate.</p></div>
+    </article>
+
+    <article class="card" data-setup="solo" data-loc="office-couch" data-topic="founder" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">08</span>
+        <div class="card-badges"><span class="badge yellow">🟡 Real stark</span><span class="badge">~15 min</span></div>
+      </div>
+      <h3>Mein Lieblings-Feature (offen + ehrlich)</h3>
+      <p class="card-sub">Persönliches Founder-Statement · 30 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · locker auf Couch oder am Tisch</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Office, casual</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ · gutes Mikro</span></div>
+      </div>
+      <div class="block"><div class="block-label">Stichworte</div><p>Welches Feature nutzt du selbst am meisten — und warum. Persönlich, nicht Marketing-Tonfall.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Sympathie-Anker. Founder mit echter Vorliebe für ein Detail = menschlich.</p></div>
+    </article>
+
+  </div>
+</section>
+
+<section class="category">
+  <div class="category-head"><h2>🗣️ Sales-Frontline</h2><span class="count">5 Ideen · Beobachtungen aus echten Kundengesprächen</span></div>
+  <div class="grid">
+
+    <article class="card" data-setup="solo" data-loc="office-couch" data-topic="story" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">09</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge">~20 min</span></div>
+      </div>
+      <h3>„500 statt 50 Belege" — Wachstumsstory</h3>
+      <p class="card-sub">Sales-Anekdote · casual · 45 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · entspannt sitzend</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Office-Couch oder großer Tisch · Kaffee in der Hand</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ · DSLR · Mikro · evtl. Beleuchtung</span></div>
+      </div>
+      <div class="block"><div class="block-label">Stichworte</div><p>50→500 in 6 Monaten · Buchhaltung am Anschlag · was wir gemacht haben · wie's heute aussieht.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Storytelling lebt von Pause, Augenkontakt, Atmen. AI flattet das aus.</p></div>
+    </article>
+
+    <article class="card" data-setup="solo" data-loc="office-couch" data-topic="story" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">10</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge">~20 min</span></div>
+      </div>
+      <h3>Skonti-Verlust-Story</h3>
+      <p class="card-sub">Sales-Anekdote · konkrete Euro-Verluste · 45 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · sitzend</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Couch oder am großen Tisch</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ · DSLR · Mikro</span></div>
+      </div>
+      <div class="block"><div class="block-label">Stichworte</div><p>Tausende Euro verloren · nicht aus Geldmangel sondern Struktur-Mangel · Hebel über Skonti-Pflege.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Empörungs-Story braucht echte Stimm-Modulation.</p></div>
+    </article>
+
+    <article class="card" data-setup="solo" data-loc="office-couch" data-topic="story" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">11</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge cyan">NEU · SERIE</span><span class="badge">~20 min</span></div>
+      </div>
+      <h3>3 Sätze die mir Kunden immer wieder sagen</h3>
+      <p class="card-sub">Sales-Frontline-Take · 60 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · locker</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Couch oder Tisch</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ · DSLR · Mikro</span></div>
+      </div>
+      <div class="block"><div class="block-label">Stichworte zum freien Sprechen</div><p>Welche 3 Sätze fallen wirklich oft im Kundengespräch · was sie meinen · was du dann antwortest.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Insider-Beobachtung. Funktioniert als Reihe — jede Woche andere Sätze.</p></div>
+    </article>
+
+    <article class="card" data-setup="solo" data-loc="office-talk" data-topic="story" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">12</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge cyan">NEU</span><span class="badge">~25 min</span></div>
+      </div>
+      <h3>Eine Kunden-Mail von dieser Woche</h3>
+      <p class="card-sub">Anonymisiert vorlesen + einordnen · 45 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · Laptop oder Phone in der Hand</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Office am Schreibtisch oder Couch</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ · DSLR · Mikro · echte (anonymisierte) Kunden-Mail</span></div>
+      </div>
+      <div class="block"><div class="block-label">Stichworte</div><p>1–2 Sätze aus echter Mail vorlesen · was das Problem dahinter ist · wie GMI das löst. Anonymisierung vorher abklären.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Echte Kundennachricht in der Hand zu zeigen ist nicht fakebar. Sehr starkes Trust-Signal.</p></div>
+    </article>
+
+    <article class="card" data-setup="solo" data-loc="office-couch" data-topic="story" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">13</span>
+        <div class="card-badges"><span class="badge yellow">🟡 Real stark</span><span class="badge cyan">NEU · SERIE</span><span class="badge">~15 min</span></div>
+      </div>
+      <h3>Was war diese Woche überraschend?</h3>
+      <p class="card-sub">Wöchentliches Format · 30 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · Stehgreif-Take</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Office, jedes Setting OK</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">iPhone reicht · Mikro</span></div>
+      </div>
+      <div class="block"><div class="block-label">Stichworte</div><p>1 Sache aus dieser Woche · die dich überrascht hat · was wir daraus lernen.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Stehgreif-Format = authentisch. Wenn man es jede Woche dreht, baut sich Serie auf.</p></div>
+    </article>
+
+  </div>
+</section>
+
+<section class="category">
+  <div class="category-head"><h2>📱 Product-in-Use</h2><span class="count">3 Ideen · echte Hände, echte App</span></div>
+  <div class="grid">
+
+    <article class="card" data-setup="hands" data-loc="topdown" data-topic="mobile" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">14</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge">~15 min</span></div>
+      </div>
+      <h3>Mobile App in 3 Sekunden</h3>
+      <p class="card-sub">Top-Down · Hands-only · loopbar</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Hands-only (wer auch immer)</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Tischfläche mit Tageslicht oder Softbox</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ über Tisch / Top-Down-Rig · echtes Phone · echter Beleg</span></div>
+      </div>
+      <div class="block"><div class="block-label">Szene</div><p>Hand legt Beleg. Andere Hand zückt Phone. Scan. „Hochgeladen ✓". 5 Sek total, loopbar.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Echte Finger + echte App + echtes Papier = höchste Glaubwürdigkeit. AI glitcht hier.</p></div>
+    </article>
+
+    <article class="card" data-setup="duo" data-loc="office-talk" data-topic="mobile" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">15</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge rose">DUO</span><span class="badge">~20 min</span></div>
+      </div>
+      <h3>Beleg-Scan-Race „Alt vs. GMI"</h3>
+      <p class="card-sub">Stoppuhr-Wettkampf · 30 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Duo · 2 Schreibtische nebeneinander</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Office</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Gimbal · 2 Phones · echte Stoppuhr</span></div>
+      </div>
+      <div class="block"><div class="block-label">Szene</div><p>Stoppuhr! Person A: Beleg fotografieren, Mail schreiben, mit Login kämpfen. Person B: GMI-App scannt. Person B fertig in 4 Sek. Person A nach 30 Sek noch dabei. Echtes Lachen am Ende.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Live-Wettkampf-Energie und echtes Lachen sind das Format. AI kann das nicht.</p></div>
+    </article>
+
+    <article class="card" data-setup="solo" data-loc="office-talk" data-topic="desktop" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">16</span>
+        <div class="card-badges"><span class="badge yellow">🟡 Real stark</span><span class="badge">~30 min</span></div>
+      </div>
+      <h3>Desktop App Live Walk-through</h3>
+      <p class="card-sub">90 Sek echter Walk-through · LP + Sales</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · am echten Laptop</span></div>
+        <div><strong>Setting</strong><span class="meta-val">eigener Schreibtisch</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Stativ · DSLR · paralleles Screen-Recording als B-Roll</span></div>
+      </div>
+      <div class="block"><div class="block-label">Stichworte</div><p>App läuft lokal · Portalverbindungen stabiler · Passwort-Hoheit beim User. Frei sprechend, kein Skript.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Echte App + echte Hände + Founder-Stimme = Trust für neues Produkt.</p></div>
+    </article>
+
+  </div>
+</section>
+
+<section class="category">
+  <div class="category-head"><h2>🍷 Lifestyle / Lockere Beobachtungen</h2><span class="count">2 Ideen · seriös-locker statt sketchig</span></div>
+  <div class="grid">
+
+    <article class="card" data-setup="solo" data-loc="restaurant" data-topic="lifestyle,mobile" data-day="di">
+      <div class="card-head">
+        <span class="card-num">17</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge cyan">ÜBERARBEITET</span><span class="badge">~30 min</span></div>
+      </div>
+      <h3>Lass dir den Geschäftsessens-Spaß nicht verderben</h3>
+      <p class="card-sub">Locker-seriöse Lifestyle-Vignette · 30 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · entspannt, gegen Ende Beleg in der Hand</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Restaurant-/Café-Setting (leer) oder Office-Catering-Ecke</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Gimbal · iPhone-Mikro · echter Beleg · Glas / Tasse als Prop</span></div>
+      </div>
+      <div class="block quote"><div class="block-label">Tonalität (Beispielsatz)</div><p>„Lass dir den Spaß am Geschäftsessen nicht verderben — auch wenn der Abend länger geht. Der Beleg ist in fünf Sekunden gescannt. Genieß den Abend."</p></div>
+      <div class="block"><div class="block-label">Stichworte zum freien Sprechen</div><p>Lockerer Ton · keine Panik-Szene · am Ende beiläufig Scan-Move. Botschaft: GMI ist eine Erleichterung, kein Performance-Stress.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Locker-seriöse Vignette = der Tonfall den die Brand gerade braucht. Kein Sketch, kein Hardsell.</p></div>
+    </article>
+
+    <article class="card" data-setup="solo" data-loc="office-walk" data-topic="founder" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">18</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge cyan">NEU</span><span class="badge">~20 min</span></div>
+      </div>
+      <h3>Walk-&-Talk durchs Office</h3>
+      <p class="card-sub">Frei sprechend im Laufen · 45–60 Sek</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Solo · laufend</span></div>
+        <div><strong>Setting</strong><span class="meta-val">Office-Flur / Großraum</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">Gimbal · Lavalier-Mikro</span></div>
+      </div>
+      <div class="block"><div class="block-label">Mögliche Themen (1 pro Take)</div><p>Warum die Desktop App jetzt kam · Wie ein Tag bei GMI aussieht · Was uns bei E-Rechnung gerade beschäftigt · Was wir als nächstes bauen.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Walking-Talking-Format wirkt dynamisch und natürlich. Mehrere Folgen aus einem Dreh möglich.</p></div>
+    </article>
+
+  </div>
+</section>
+
+<section class="category">
+  <div class="category-head"><h2>🎞️ AI-Intros &amp; Hooks (2–3 Sek)</h2><span class="count">3 Ideen · AI-Generated → echter Schnitt · Universal-Hooks</span></div>
+  <div class="grid">
+
+    <article class="card" data-setup="edit" data-topic="intro" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">20</span>
+        <div class="card-badges"><span class="badge cyan">NEU · TREND</span><span class="badge">2–3 Sek</span></div>
+      </div>
+      <h3>AI Office-Drohnenflug → echter Schnitt</h3>
+      <p class="card-sub">Cinematic intro · seamless AI-zu-Real cut</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Edit · AI-generiert + reales Footage</span></div>
+        <div><strong>Tooling</strong><span class="meta-val">Higgsfield Marketing Studio / Seedance 2.0 / Veo · final Cut in Premiere</span></div>
+        <div><strong>Verwendung</strong><span class="meta-val">Universal-Intro für jedes Hauptvideo</span></div>
+      </div>
+      <div class="block"><div class="block-label">Szene</div><p>2 Sek AI-Drohnenflug durch leeres Office (Außen-Anflug ans Gebäude oder Innen-Sweep durch Flur), Kamera nähert sich einem Schreibtisch — letztes Frame matched in Bildausschnitt und Lichtsituation auf das reale Eröffnungsframe des Hauptvideos (Christoph am Schreibtisch).</p></div>
+      <div class="block highlight"><div class="block-label">Warum stark</div><p>Cinematic feel in 2 Sek = sofortiger 3-Sek-Hook (siehe Algorithm-Cheat-Sheet #29). Wirkt aufwendig produziert, ohne dass es viel Real-Drehzeit kostet.</p></div>
+    </article>
+
+    <article class="card" data-setup="edit" data-topic="intro,peppol" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">21</span>
+        <div class="card-badges"><span class="badge cyan">NEU · TREND</span><span class="badge">2–3 Sek</span></div>
+      </div>
+      <h3>AI Papier-Tornado → reales Office</h3>
+      <p class="card-sub">Knüpft an Tornado-Kampagne · Pain-Point-Intro</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Edit · AI-generiert + reales Footage</span></div>
+        <div><strong>Tooling</strong><span class="meta-val">Higgsfield / Seedance · Cut auf dem dunkelsten Frame</span></div>
+        <div><strong>Verwendung</strong><span class="meta-val">E-Rechnungs- / Beleg-Themen, Peppol-Erklärungen</span></div>
+      </div>
+      <div class="block"><div class="block-label">Szene</div><p>AI: Papier-Tornado wirbelt durch dunklen Bürogang, Kamera fliegt rein. Im Maximum der Tornado-Verdunkelung (vollständig Papier in der Linse) — harter Cut auf reales Bild: Christoph am aufgeräumten Schreibtisch, völlige Ruhe. Klassischer Pain → Lösung-Hook in 3 Sek.</p></div>
+      <div class="block highlight"><div class="block-label">Warum stark</div><p>Visueller Pattern-Interrupt (Chaos → Ruhe), funktioniert ohne Worte, anschlussfähig an die Tornado-Kampagnen-Ästhetik.</p></div>
+    </article>
+
+    <article class="card" data-setup="edit" data-topic="intro,mobile" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">22</span>
+        <div class="card-badges"><span class="badge cyan">NEU · TREND</span><span class="badge">3 Sek</span></div>
+      </div>
+      <h3>AI Phone-Portal-Zoom-In</h3>
+      <p class="card-sub">Zoom durchs Phone in die App und wieder raus</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Edit · AI-generiert + reales Hand-Footage</span></div>
+        <div><strong>Tooling</strong><span class="meta-val">Higgsfield / Seedance · seamless AI-zoom durch UI</span></div>
+        <div><strong>Verwendung</strong><span class="meta-val">Mobile-App- und Desktop-App-Videos</span></div>
+      </div>
+      <div class="block"><div class="block-label">Szene</div><p>Reales Footage: Hand hebt Phone vor Linse. AI nahtloser Zoom IN den Phone-Bildschirm rein → fliegt durch GMI-App-Oberfläche → kommt auf der anderen Seite raus → cuts wieder zu realer Hand am Laptop. Trippy aber clean.</p></div>
+      <div class="block highlight"><div class="block-label">Warum stark</div><p>„Wow"-Moment in 3 Sek. Klare Verbindung Phone → App → Desktop = perfekter Produkt-Reveal-Hook.</p></div>
+    </article>
+
+  </div>
+</section>
+
+<section class="category">
+  <div class="category-head"><h2>✂️ Reel-Übergänge &amp; Trends (im Schnitt anwendbar)</h2><span class="count">6 Techniken · curated aus aktuellen TikTok/Reels-Trends · B2B-tauglich</span></div>
+  <div class="grid">
+
+    <article class="card" data-setup="edit" data-topic="transition,mobile" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">23</span>
+        <div class="card-badges"><span class="badge cyan">TREND 2026</span><span class="badge">~1 Sek Übergang</span></div>
+      </div>
+      <h3>Beleg-Cover-Lens-Reveal</h3>
+      <p class="card-sub">„Naruto-Cut" · B2B-Variante</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Edit · zwei kurze Real-Takes mit gleichem Beleg-Prop</span></div>
+        <div><strong>Anwendbar bei</strong><span class="meta-val">Restaurant-Vignette · Mobile-App · Race-Stunt</span></div>
+        <div><strong>Trend-Quelle</strong><span class="meta-val">Object-cover-lens-Transition · TikTok-Format 2026</span></div>
+      </div>
+      <div class="block"><div class="block-label">Wie funktioniert's</div><p>Person hält Beleg langsam vor die Linse bis er 100% der Bildfläche füllt. Schnitt. Im neuen Take wird der gleiche Beleg in gleicher Größe von der Linse weggezogen — jetzt ist die Szene aber komplett anders (Restaurant → Schreibtisch / draußen → drinnen / chaotisch → ordentlich).</p></div>
+      <div class="block highlight"><div class="block-label">Warum B2B-tauglich</div><p>Trend funktioniert ohne Albernheit. Der Beleg selbst ist die Brücke = thematisch perfekt für GMI.</p></div>
+    </article>
+
+    <article class="card" data-setup="edit" data-topic="transition,lifestyle" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">24</span>
+        <div class="card-badges"><span class="badge cyan">TREND 2026</span><span class="badge">~1–2 Sek</span></div>
+      </div>
+      <h3>Chaos-zu-Ordnung Match-Cut</h3>
+      <p class="card-sub">Visually satisfying transformation</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Edit · 2 Takes mit identischer Kameraposition</span></div>
+        <div><strong>Anwendbar bei</strong><span class="meta-val">jedes Pain → Lösung-Video</span></div>
+        <div><strong>Trend-Quelle</strong><span class="meta-val">„Highlight-Switch" + Transformation-Trends 2026</span></div>
+      </div>
+      <div class="block"><div class="block-label">Wie funktioniert's</div><p>Identische Bildperspektive, 2 Takes. Frame 1: chaotischer Schreibtisch / Belegstapel / Mailflut. Hand wischt vor Linse → harter Cut. Frame 2: gleiche Perspektive, aber leer/ordentlich. Funktioniert auch mit Slack-Inbox, Excel-Liste, OPOS-Tabelle.</p></div>
+      <div class="block highlight"><div class="block-label">Warum stark</div><p>Algorithmen pushen „visually satisfying" hart — Befriedigung durch Ordnung ist universell.</p></div>
+    </article>
+
+    <article class="card" data-setup="edit" data-topic="transition" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">25</span>
+        <div class="card-badges"><span class="badge cyan">TREND 2026</span><span class="badge">15–20 Sek total</span></div>
+      </div>
+      <h3>Highlight-Switch-Karussell</h3>
+      <p class="card-sub">Rapid-cut Feature-Reel zum Beat-Drop</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Edit · 4–6 Mikro-Clips à 0,5–0,7 Sek</span></div>
+        <div><strong>Anwendbar bei</strong><span class="meta-val">Feature-Übersicht · Recap-Posts · LP-Reels</span></div>
+        <div><strong>Trend-Quelle</strong><span class="meta-val">„Highlight Switch Format" Instagram Reels 2026</span></div>
+      </div>
+      <div class="block"><div class="block-label">Wie funktioniert's</div><p>4–6 GMI-Features synchron zum Beat geschnitten, je 0,5–0,7 Sek: Belegerkennung → Workflow-Tag → Multi-GmbH → Peppol-Empfang → Banking-Sync → Kreditkarten-Reconciliation. Bold burned-in Captions pro Feature.</p></div>
+      <div class="block highlight"><div class="block-label">Warum stark</div><p>20 Sek-Sweet-Spot, hohe Cut-Frequenz = Algorithmus-Liebling. Aus dem Material vom Drehtag mehrfach baubar.</p></div>
+    </article>
+
+    <article class="card" data-setup="edit" data-topic="transition" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">26</span>
+        <div class="card-badges"><span class="badge cyan">TREND 2026</span><span class="badge">~5–8 Sek</span></div>
+      </div>
+      <h3>Freeze-Frame mit Element-Change</h3>
+      <p class="card-sub">„Want Some More"-Variante · B2B-Twist</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Edit · 2 Takes mit eingefrorener Person-Pose</span></div>
+        <div><strong>Anwendbar bei</strong><span class="meta-val">jedes Founder/Sales-Format</span></div>
+        <div><strong>Trend-Quelle</strong><span class="meta-val">Beat-Drop-Freeze · TikTok 2026</span></div>
+      </div>
+      <div class="block"><div class="block-label">Wie funktioniert's</div><p>Person hält Pose völlig still. Auf Beat: ein Element im Bild ändert sich blitzartig — Schreibtisch von chaotisch auf leer, Slack-Notifications fallen weg, Aktenstapel verschwindet. Person bleibt 1 Sek frozen, dann reagiert mit Lächeln und spricht weiter.</p></div>
+      <div class="block highlight"><div class="block-label">Warum stark</div><p>Trend-konform ohne Cringe. „Magie" ist die Lösung, nicht das Tanzen.</p></div>
+    </article>
+
+    <article class="card" data-setup="edit" data-topic="transition,glossar,peppol" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">27</span>
+        <div class="card-badges"><span class="badge cyan">TREND</span><span class="badge">~1 Sek pro Übergang</span></div>
+      </div>
+      <h3>Whiteboard-Wipe-Transition</h3>
+      <p class="card-sub">Naht für die Glossar-Serie</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Edit · während Drehs am Whiteboard immer eine Wisch-Sekunde mitfilmen</span></div>
+        <div><strong>Anwendbar bei</strong><span class="meta-val">Glossar-Serie (07) · Peppol-Erklärung (02)</span></div>
+      </div>
+      <div class="block"><div class="block-label">Wie funktioniert's</div><p>Christoph schreibt Begriff aufs Whiteboard. Wischt mit Hand durchs Frame → Frame wird kurz weiß überblendet → erscheint nächster Begriff im gleichen Stil. Macht aus 10 Glossar-Snippets ein zusammenhängendes Video von 4–5 Min Länge.</p></div>
+      <div class="block highlight"><div class="block-label">Warum stark</div><p>Serienkonsistenz + Brand-Wiedererkennung. Kostet im Dreh fast nichts (1 Sek pro Übergang mitfilmen).</p></div>
+    </article>
+
+    <article class="card" data-setup="edit" data-topic="transition" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">28</span>
+        <div class="card-badges"><span class="badge cyan">UNIVERSAL</span><span class="badge">~0,5 Sek</span></div>
+      </div>
+      <h3>Hand-Swipe-Reveal</h3>
+      <p class="card-sub">Universal-Übergang zwischen jedem Take</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">Edit · 1 Wisch-Sekunde am Anfang/Ende jedes Takes mitfilmen</span></div>
+        <div><strong>Anwendbar bei</strong><span class="meta-val">jedem Schnitt zwischen 2 Takes</span></div>
+      </div>
+      <div class="block"><div class="block-label">Wie funktioniert's</div><p>Person hebt Hand links außerhalb des Frames, swipt schnell durch die Bildfläche (Hand füllt kurz die Linse), nächster Take beginnt mit Hand, die ebenfalls aus der gleichen Richtung rauswandert. Saubere optische Brücke.</p></div>
+      <div class="block highlight"><div class="block-label">Warum nützlich</div><p>Macht jeden Cut „intentional". Kann man am Drehtag systematisch dranhängen — kostet 5 Sek pro Take.</p></div>
+    </article>
+
+  </div>
+</section>
+
+<section class="category">
+  <div class="category-head"><h2>📊 Algorithm-Cheat-Sheet 2026</h2><span class="count">1 Übersichtskarte · Prinzipien die in alle Videos einfließen sollten</span></div>
+  <div class="grid">
+
+    <article class="card" data-setup="edit" data-topic="algorithm" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">29</span>
+        <div class="card-badges"><span class="badge cyan">CHEAT-SHEET</span></div>
+      </div>
+      <h3>Was 2026 Reichweite bringt — die 7 Hebel</h3>
+      <p class="card-sub">Kurz, nüchtern, aus aktueller Research (Mai 2026)</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">kein Drehthema · Postprod-Regelwerk</span></div>
+        <div><strong>Anwendbar bei</strong><span class="meta-val">JEDEM Video aus diesem Dreh</span></div>
+      </div>
+      <div class="block"><div class="block-label">1 · Die ersten 3 Sekunden entscheiden alles</div><p>Algorithmen geben ca. 1,3 Sek bis zum Swipe. Hook muss visuell + textlich sofort knallen. Deshalb die AI-Intros (#20–22).</p></div>
+      <div class="block"><div class="block-label">2 · Burned-in Captions immer</div><p>85% der Views passieren stumm. Captions in Brand-Style (Rubik-Bold, weiß + #44a4dc Highlights) sind Pflicht — kein „Untertitel optional".</p></div>
+      <div class="block"><div class="block-label">3 · DM-Shares schlagen Likes 3–5×</div><p>CTA „Schick das deinem Kollegen / Steuerberater" funktioniert auf Reels besser als „Like wenn du auch nervt". Pro Video 1 Share-CTA.</p></div>
+      <div class="block"><div class="block-label">4 · Sweet-Spot Länge: 20–35 Sek</div><p>Längere Inhalte gerne im Karussell zerlegen, oder gezielt aufs 30-Sek-Format schneiden.</p></div>
+      <div class="block"><div class="block-label">5 · Selfie-Cam outperformt Studio</div><p>Algorithmus deprioritisiert über-produziertes Material. Die Walk-&amp;-Talk- und Founder-Couch-Formate landen genau hier.</p></div>
+      <div class="block"><div class="block-label">6 · Cuts alle 0,5–1 Sek</div><p>Visuelle Frische gegen Habituation. Auch in Talking-Head: Push-ins, B-Roll-Cuts, Caption-Reveals einbauen — nichts steht länger als 3 Sätze ohne Cut.</p></div>
+      <div class="block"><div class="block-label">7 · Pattern-Interrupt</div><p>Ergebnis zuerst zeigen, Erklärung danach. „Wir haben einer Kundin 12 Stunden im Monat zurückgegeben — so haben wir's gemacht" funktioniert besser als chronologisch.</p></div>
+      <div class="block highlight"><div class="block-label">Implementierung im Dreh</div><p>Bei jedem Take darauf achten: 1 starker Hook-Frame · klare Mimik · Pause vor dem Punchline-Satz (für Cut). Im Schnitt: Captions, Beat-Sync, kurze Loops &lt; 35 Sek.</p></div>
+    </article>
+
+  </div>
+</section>
+
+<section class="category">
+  <div class="category-head"><h2>📸 Office-Vibe (läuft nebenher)</h2><span class="count">1 dauerhaftes Format · parallel zu allem anderen</span></div>
+  <div class="grid">
+
+    <article class="card" data-setup="bts" data-loc="office-talk" data-topic="lifestyle" data-day="mo,di">
+      <div class="card-head">
+        <span class="card-num">30</span>
+        <div class="card-badges"><span class="badge green">🟢 Real-only</span><span class="badge cyan">NEU</span><span class="badge">durchgehend</span></div>
+      </div>
+      <h3>Office-Fotos zwischendurch</h3>
+      <p class="card-sub">BTS-Stimmung · Stock-Material · läuft mit</p>
+      <div class="meta">
+        <div><strong>Setup</strong><span class="meta-val">BTS · zwischen den geplanten Takes</span></div>
+        <div><strong>Setting</strong><span class="meta-val">ganzes Office: Küche, Schreibtische, Meeting-Raum, Pause, Fenster-Licht</span></div>
+        <div><strong>Equipment</strong><span class="meta-val">DSLR mit Festbrennweite · ggf. iPhone für Spontan-Shots</span></div>
+      </div>
+      <div class="block"><div class="block-label">Was sammeln</div><p>Hände an Tastatur · Kaffee · Slack-Notification auf Bildschirm · zwei Leute am Whiteboard · Lachen im Meeting · Sonne durchs Fenster · Pflanzen · GMI-Logo-Detail · Sneaker unter dem Tisch · Pause auf der Couch.</p></div>
+      <div class="block highlight"><div class="block-label">Warum echt</div><p>Office-Vibe ist literally nicht fakebar. Versorgt Social-Posts, Blog-Header, Webinar-Folien, About-Page für Monate.</p></div>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  Stand: 27.05.2026 · Wanja · GMI Marketing · v3 (+ Trends &amp; AI-Intros)<br>
+  Klick auf eine Karte = Favorit (lokal gespeichert). · <kbd>Strg+P</kbd> für Druck / PDF.
+</footer>
+
+<script>
+const filters = { setup: new Set(), loc: new Set(), topic: new Set(), day: new Set() };
+
+document.querySelectorAll('.filter-group button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const type = btn.dataset.type;
+    const val = btn.dataset.val;
+    if (btn.classList.contains('active')) {
+      btn.classList.remove('active');
+      filters[type].delete(val);
+    } else {
+      btn.classList.add('active');
+      filters[type].add(val);
+    }
+    applyFilters();
+  });
+});
+
+function applyFilters() {
+  document.querySelectorAll('.card').forEach(card => {
+    let show = true;
+    for (const [type, set] of Object.entries(filters)) {
+      if (set.size === 0) continue;
+      const cardVals = (card.dataset[type] || '').split(',').map(v => v.trim());
+      const hasMatch = [...set].some(v => cardVals.includes(v));
+      if (!hasMatch) { show = false; break; }
+    }
+    card.style.display = show ? '' : 'none';
+  });
+  document.querySelectorAll('.category').forEach(cat => {
+    const visible = [...cat.querySelectorAll('.card')].some(c => c.style.display !== 'none');
+    cat.style.display = visible ? '' : 'none';
+  });
+}
+
+function resetFilters() {
+  Object.values(filters).forEach(s => s.clear());
+  document.querySelectorAll('.filter-group button.active').forEach(b => b.classList.remove('active'));
+  applyFilters();
+}
+
+const favs = new Set(JSON.parse(localStorage.getItem('gmi-kassel-favs') || '[]'));
+document.querySelectorAll('.card').forEach(card => {
+  const num = card.querySelector('.card-num').textContent;
+  if (favs.has(num)) card.classList.add('fav');
+  card.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+    if (favs.has(num)) { favs.delete(num); card.classList.remove('fav'); }
+    else { favs.add(num); card.classList.add('fav'); }
+    localStorage.setItem('gmi-kassel-favs', JSON.stringify([...favs]));
+  });
+});
+</script>
+</body>
+</html>

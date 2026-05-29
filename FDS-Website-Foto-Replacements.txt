@@ -1,0 +1,280 @@
+FDS-WEBSITE FOTO-REPLACEMENTS · DRehTAG KASSEL
+================================================
+
+9 zu ersetzende Bilder auf den Seiten "Über uns" + "Karriere".
+Pro Bild 3 Foto-Ideen. Mit 5-8 Personen vor Ort umsetzbar.
+FDS-Mockups / echte Webseite auf Bildschirmen zeigen.
+
+DREHPLANUNGS-HINWEIS: Shots nach SETUP gruppieren
+(Whiteboard / Schreibtisch / Konferenztisch / Top-Down),
+NICHT nach Webseiten-Sektion -> spart Umbauzeit.
+Tageslicht bevorzugen, keine Mischbeleuchtung.
+
+
+==================================================
+ÜBER UNS · WIE WIR ARBEITEN
+==================================================
+
+--------------------------------------------------
+BILD 01 · Product & Engineering
+"Von der Idee bis zum laufenden Produkt"
+--------------------------------------------------
+
+Idee 1 · Architektur am Whiteboard
+- Framing: medium, leicht seitlich
+- Personen: 3 (eine zeichnet, eine fragt, eine notiert)
+- Props: Whiteboard mit Skizze "InvoiceRails -> Bank -> ERP", Marker, Notizbuch
+- Ort: Glaswand / Whiteboard-Ecke
+
+Idee 2 · Pair-Programming am Macbook
+- Framing: close, über die Schulter
+- Personen: 2
+- Props: Macbook mit VSCode + echtem FDS-Repo-Code
+- Ort: Schreibtisch am Fenster
+
+Idee 3 · Stehtisch-Tech-Diskussion
+- Framing: full-body, beide stehend
+- Personen: 2
+- Props: Stehtisch, Laptop mit FDS-Dashboard, Kaffeebecher
+- Ort: lichtdurchflutete Office-Ecke
+
+
+--------------------------------------------------
+BILD 02 · Go-to-Market
+"Vom ersten Gespräch bis zur echten Partnerschaft"
+--------------------------------------------------
+
+Idee 1 · Online-Call mit Partner
+- Framing: close, 3/4-Profil
+- Personen: 1 (mit Headset)
+- Props: Bildschirm mit Teams/Zoom (Tiles verpixelt), Notizbuch
+- Ort: Schreibtisch oder Phone-Booth
+
+Idee 2 · Tisch-Meeting mit FDS-Mockup
+- Framing: medium, Schräglage vom Tisch
+- Personen: 2-3 (eine erklärt am Laptop)
+- Props: Laptop mit FDS-Partner-Onboarding-Seite, Notizen, Kaffee
+- Ort: Konferenztisch oder großer Arbeitstisch
+
+Idee 3 · Vertrags-/Pitch-Moment
+- Framing: close, Top-Down auf Hände
+- Personen: 2 Paar Hände
+- Props: gedrucktes Pitch-Deck mit FDS-Branding, Stift, Block
+- Ort: Konferenztisch
+
+
+==================================================
+ÜBER UNS · ZUSAMMENARBEIT ÜBER TECHNOLOGIE HINAUS
+==================================================
+
+--------------------------------------------------
+BILD 03 · Step 1 — Problem verstehen
+--------------------------------------------------
+
+Idee 1 · Customer-Interview-Pose
+- Framing: medium, Rücken-zur-Kamera für die Sprechende
+- Personen: 2 (eine notiert, eine spricht)
+- Props: Notizblock + Stift im Vordergrund, Hand in Bewegung
+- Ort: Couch oder Konferenztisch
+
+Idee 2 · Post-It-Wall Close-Up
+- Framing: Detail, eine Hand sichtbar
+- Personen: 1 (nur Hand)
+- Props: Glaswand mit Post-Its ("User Pain", "Workflow-Schritte", "API-Calls")
+- Ort: Glaswand
+
+Idee 3 · Sketch-Session zu zweit
+- Framing: medium, beide am Whiteboard
+- Personen: 2 (zeichnen gleichzeitig)
+- Props: Whiteboard mit User-Journey, 2 Marker (blau + rot)
+- Ort: Whiteboard-Ecke
+
+
+--------------------------------------------------
+BILD 04 · Step 2 — Lösung bauen
+--------------------------------------------------
+
+Idee 1 · Hands-on-Keyboard Top-Down
+- Framing: top-down auf Macbook
+- Personen: 1 (nur Hände)
+- Props: Macbook mit Cursor/VSCode + echter FDS-Codezeile (z.B. invoicerails)
+- Ort: Schreibtisch am Fenster
+
+Idee 2 · Multi-Screen-Workspace
+- Framing: wide, 3/4 von hinten
+- Personen: 1
+- Props: 2-3 Bildschirme: IDE + FDS-Localhost im Browser + Terminal
+- Ort: Entwickler-Schreibtisch
+
+Idee 3 · Pair-Debug-Moment
+- Framing: close, beide zum Bildschirm
+- Personen: 2 (einer zeigt mit Finger)
+- Props: Bildschirm mit FDS-Logs oder Stacktrace
+- Ort: Schreibtisch
+
+
+--------------------------------------------------
+BILD 05 · Step 3 — Verbessern, bis es fließt
+--------------------------------------------------
+
+Idee 1 · Dashboard-Review
+- Framing: medium, beide auf Bildschirm
+- Personen: 1-2
+- Props: großer Bildschirm mit Grafana-style FDS-Monitoring (echte Graphen)
+- Ort: Schreibtisch oder Wand-Bildschirm
+
+Idee 2 · Retro / Standup-Session
+- Framing: wide, halb-rund
+- Personen: 4-5
+- Props: Board mit Sticky Notes (echte Retro-Begriffe)
+- Ort: Whiteboard-Ecke / Meeting-Raum
+
+Idee 3 · Print-Out mit Stift-Notiz
+- Framing: top-down, Tiefenschärfe
+- Personen: 1 (nur Hand)
+- Props: ausgedrucktes Performance-Diagramm, Stift markiert Spitze
+- Ort: Tisch mit Tageslicht
+
+
+==================================================
+KARRIERE · WAS DU BEWEGST (GO-TO-MARKET)
+==================================================
+
+--------------------------------------------------
+BILD 06 · Partnership
+--------------------------------------------------
+
+Idee 1 · Partner-Architektur am Whiteboard
+- Framing: medium, beide leicht seitlich
+- Personen: 2
+- Props: Whiteboard "FDS Core <-> Partner-ERP <-> Bank" mit Pfeilen
+- Ort: Whiteboard-Ecke
+
+Idee 2 · Online-Pitch mit Headset
+- Framing: close, frontal-3/4
+- Personen: 1
+- Props: Headset, Bildschirm mit Folie mit Partner-Logo-Mockup
+- Ort: Schreibtisch
+
+Idee 3 · Vertrags-Review zu zweit
+- Framing: close, Hände im Vordergrund
+- Personen: 2 Paar Hände
+- Props: gedrucktes Vertragsdokument, Stift, FDS-Branding sichtbar
+- Ort: Konferenztisch
+
+
+--------------------------------------------------
+BILD 07 · Marketing
+--------------------------------------------------
+
+Idee 1 · Content-Plan-Session
+- Framing: medium, beide auf Bildschirm
+- Personen: 2
+- Props: Bildschirm mit Notion/Trello-Content-Board für FDS
+- Ort: Schreibtisch
+
+Idee 2 · Camera + Phone Setup
+- Framing: close, nur Hände
+- Personen: 1 (Hand mit Phone)
+- Props: Phone, fotografiert Mockup oder Notizbuch mit Skizzen
+- Ort: heller Tisch
+
+Idee 3 · Customer-Journey am Whiteboard
+- Framing: medium, 3/4-Profil seitlich
+- Personen: 1 (zeichnet)
+- Props: Whiteboard mit "Awareness -> Trial -> Convert"-Pfeilen
+- Ort: Whiteboard-Ecke
+
+
+--------------------------------------------------
+BILD 08 · Business Development
+--------------------------------------------------
+
+Idee 1 · Deal-Strukturierung am Laptop
+- Framing: medium, gestikulierende Hände
+- Personen: 1
+- Props: Bildschirm mit Deal-Struktur-Diagramm (Boxen mit Geld-Flüssen)
+- Ort: Schreibtisch
+
+Idee 2 · Phone-Call-Moment
+- Framing: close, am Fenster stehend
+- Personen: 1
+- Props: AirPods/Headset, Notizblock in der Hand
+- Ort: am Fenster, Lichtquelle dahinter
+
+Idee 3 · Pitch-Deck im Druck
+- Framing: top-down, Tiefenschärfe
+- Personen: 1 (Hand)
+- Props: gedrucktes FDS-Pitch-Deck (mehrere Seiten), Stift mit Anmerkung
+- Ort: Tisch
+
+
+--------------------------------------------------
+BILD 09 · Sales
+--------------------------------------------------
+
+Idee 1 · Headset-Demo am Bildschirm
+- Framing: close, 3/4-Profil
+- Personen: 1 (mit Headset)
+- Props: Bildschirm mit FDS-Demo (InvoiceRails-Dashboard), Hand am Mauszeiger
+- Ort: Schreibtisch
+
+Idee 2 · Customer-Call über die Schulter
+- Framing: over-shoulder, leicht seitlich
+- Personen: 1
+- Props: Bildschirm mit Zoom-Call (Tiles verpixelt) + Notiz-Seitenleiste
+- Ort: Schreibtisch
+
+Idee 3 · CRM-Workspace-Stillleben
+- Framing: top-down, kein Gesicht
+- Personen: 0 (Workspace-Shot)
+- Props: Notizbuch, Phone, Kaffee, Laptop mit HubSpot/Pipedrive-CRM-View für FDS-Deals
+- Ort: Schreibtisch von oben
+
+
+==================================================
+ZUSAMMENFASSUNG SETUP-GRUPPEN
+==================================================
+
+Whiteboard-Setups (am Stück):
+- BILD 01 Idee 1 (Architektur)
+- BILD 03 Idee 3 (Sketch zu zweit)
+- BILD 05 Idee 2 (Retro mit Sticky Notes)
+- BILD 06 Idee 1 (Partner-Architektur)
+- BILD 07 Idee 3 (Customer-Journey)
+
+Schreibtisch / Laptop / Headset (am Stück):
+- BILD 01 Idee 2 (Pair-Programming)
+- BILD 02 Idee 1 (Online-Call mit Headset)
+- BILD 04 Idee 1 (Hands-on-Keyboard)
+- BILD 04 Idee 2 (Multi-Screen)
+- BILD 04 Idee 3 (Pair-Debug)
+- BILD 05 Idee 1 (Dashboard-Review)
+- BILD 06 Idee 2 (Online-Pitch)
+- BILD 07 Idee 1 (Content-Plan-Session)
+- BILD 08 Idee 1 (Deal-Strukturierung)
+- BILD 09 Idee 1 (Headset-Demo)
+- BILD 09 Idee 2 (Customer-Call)
+
+Konferenztisch / Tisch-Meeting (am Stück):
+- BILD 02 Idee 2 (Tisch-Meeting)
+- BILD 02 Idee 3 (Vertrags-Moment)
+- BILD 03 Idee 1 (Customer-Interview)
+- BILD 06 Idee 3 (Vertrags-Review)
+
+Top-Down / Hands-only / Stillleben (am Stück):
+- BILD 04 Idee 1 (Hands-on-Keyboard) -> kann hier oder Schreibtisch
+- BILD 05 Idee 3 (Print-Out mit Stift)
+- BILD 07 Idee 2 (Camera + Phone)
+- BILD 08 Idee 3 (Pitch-Deck Print)
+- BILD 09 Idee 3 (CRM-Workspace)
+
+Stehend / am Fenster:
+- BILD 01 Idee 3 (Stehtisch-Diskussion)
+- BILD 08 Idee 2 (Phone-Call am Fenster)
+
+Detail / Post-It:
+- BILD 03 Idee 2 (Post-It-Wall Close-Up)
+
+
+Stand: 28.05.2026 · Wanja · GMI Marketing
