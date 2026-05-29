@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FDS Foto · Shot-Liste · Kassel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+:root {
+  --bg: #0a0e1a;
+  --bg-card: #161b2e;
+  --text: #f5f7fb;
+  --muted: #8a92ad;
+  --cyan: #44a4dc;
+  --border: rgba(255,255,255,0.08);
+}
+html, body { margin: 0; padding: 0; font-family: 'Rubik', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+.wrap { max-width: 800px; margin: 0 auto; padding: 40px 24px 60px; }
+header { margin-bottom: 32px; }
+.eyebrow { color: var(--cyan); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px; }
+h1 { font-size: 30px; font-weight: 800; margin: 0 0 8px; line-height: 1.15; }
+.lead { color: var(--muted); font-size: 14px; margin: 0; }
+
+.group { margin-top: 28px; }
+.group-title { font-size: 13px; font-weight: 700; color: var(--cyan); text-transform: uppercase; letter-spacing: 1.2px; margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+
+.shot { padding: 12px 14px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 12px; }
+.shot-num { color: var(--cyan); font-weight: 800; font-size: 12px; letter-spacing: 1px; flex-shrink: 0; min-width: 50px; padding-top: 2px; }
+.shot-content { flex: 1; }
+.shot h3 { margin: 0 0 4px; font-size: 15px; font-weight: 600; }
+.shot p { margin: 0; color: var(--muted); font-size: 13px; }
+
+.setup { margin-top: 36px; padding: 20px 22px; background: var(--bg-card); border-left: 3px solid var(--cyan); border-radius: 8px; }
+.setup h2 { margin: 0 0 12px; font-size: 16px; font-weight: 700; }
+.setup ul { margin: 0; padding-left: 20px; font-size: 13.5px; color: var(--muted); }
+.setup li { margin-bottom: 5px; }
+.setup li strong { color: var(--text); font-weight: 600; }
+
+.cta { margin-top: 36px; text-align: center; }
+.cta a { color: var(--cyan); text-decoration: none; font-size: 13px; font-weight: 600; }
+.cta a:hover { text-decoration: underline; }
+
+footer { margin-top: 48px; color: var(--muted); font-size: 12px; text-align: center; }
+
+@media print {
+  body { background: white; color: black; }
+  .shot { background: white; border: 1px solid #ccc; break-inside: avoid; }
+  .setup { background: white; }
+  .shot p, .setup ul, .lead, footer { color: #444; }
+  .shot h3, .setup h2 { color: black; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">📸 Drehtag-Checkliste · Kassel Juni 2026</div>
+  <h1>FDS Website · Foto Shot-Liste</h1>
+  <p class="lead">9 Bilder zu ersetzen · 3 Ideen pro Bild · alles in einer Seite zum Abhaken. Details mit Framing/Props in der <a href="FDS-Website-Foto-Replacements.html" style="color:var(--cyan)">Vollversion</a>.</p>
+</header>
+
+<section class="group">
+  <h2 class="group-title">Über uns · Wie wir arbeiten</h2>
+  <div class="shot">
+    <span class="shot-num">BILD 01</span>
+    <div class="shot-content">
+      <h3>Product &amp; Engineering</h3>
+      <p>Architektur am Whiteboard · Pair-Programming am Macbook · Stehtisch-Diskussion</p>
+    </div>
+  </div>
+  <div class="shot">
+    <span class="shot-num">BILD 02</span>
+    <div class="shot-content">
+      <h3>Go-to-Market</h3>
+      <p>Online-Call mit Headset · Tisch-Meeting mit FDS-Mockup · Vertrags-Moment Top-Down</p>
+    </div>
+  </div>
+</section>
+
+<section class="group">
+  <h2 class="group-title">Über uns · Zusammenarbeit (3 Steps)</h2>
+  <div class="shot">
+    <span class="shot-num">BILD 03</span>
+    <div class="shot-content">
+      <h3>Step 1 · Problem verstehen</h3>
+      <p>Customer-Interview-Pose · Post-It-Wall Close-Up · Sketch-Session zu zweit</p>
+    </div>
+  </div>
+  <div class="shot">
+    <span class="shot-num">BILD 04</span>
+    <div class="shot-content">
+      <h3>Step 2 · Lösung bauen</h3>
+      <p>Hands-on-Keyboard Top-Down · Multi-Screen-Workspace · Pair-Debug-Moment</p>
+    </div>
+  </div>
+  <div class="shot">
+    <span class="shot-num">BILD 05</span>
+    <div class="shot-content">
+      <h3>Step 3 · Verbessern, bis es fließt</h3>
+      <p>Dashboard-Review · Retro-Session mit Sticky Notes · Print-Out mit Stift-Notiz</p>
+    </div>
+  </div>
+</section>
+
+<section class="group">
+  <h2 class="group-title">Karriere · Was du bewegst (4 Rollen)</h2>
+  <div class="shot">
+    <span class="shot-num">BILD 06</span>
+    <div class="shot-content">
+      <h3>Partnership</h3>
+      <p>Partner-Architektur am Whiteboard · Online-Pitch mit Headset · Vertrags-Review zu zweit</p>
+    </div>
+  </div>
+  <div class="shot">
+    <span class="shot-num">BILD 07</span>
+    <div class="shot-content">
+      <h3>Marketing</h3>
+      <p>Content-Plan-Session · Camera + Phone Setup · Customer-Journey am Whiteboard</p>
+    </div>
+  </div>
+  <div class="shot">
+    <span class="shot-num">BILD 08</span>
+    <div class="shot-content">
+      <h3>Business Development</h3>
+      <p>Deal-Strukturierung am Laptop · Phone-Call am Fenster · Pitch-Deck im Druck</p>
+    </div>
+  </div>
+  <div class="shot">
+    <span class="shot-num">BILD 09</span>
+    <div class="shot-content">
+      <h3>Sales</h3>
+      <p>Headset-Demo am Bildschirm · Customer-Call über die Schulter · CRM-Workspace-Stillleben</p>
+    </div>
+  </div>
+</section>
+
+<div class="setup">
+  <h2>📦 Setup-Gruppen (so spart der Drehtag Zeit)</h2>
+  <ul>
+    <li><strong>Whiteboard:</strong> 5 Shots — 01.1, 03.3, 05.2, 06.1, 07.3</li>
+    <li><strong>Schreibtisch / Laptop / Headset:</strong> 10–11 Shots — 01.2, 02.1, 04 alle, 05.1, 06.2, 07.1, 08.1, 09.1, 09.2</li>
+    <li><strong>Konferenztisch:</strong> 4 Shots — 02.2, 02.3, 03.1, 06.3</li>
+    <li><strong>Top-Down / Hands-only:</strong> 5 Shots — 04.1, 05.3, 07.2, 08.3, 09.3</li>
+    <li><strong>Am Fenster / stehend:</strong> 2 Shots — 01.3, 08.2</li>
+    <li><strong>Detail / Post-It:</strong> 1 Shot — 03.2</li>
+  </ul>
+</div>
+
+<div class="cta">
+  <a href="FDS-Website-Foto-Replacements.html">→ Detail-Version mit Framing, Personen, Props öffnen</a>
+</div>
+
+<footer>Stand: 29.05.2026 · Wanja · Strg/Cmd+P für Druck</footer>
+
+</div>
+</body>
+</html>
